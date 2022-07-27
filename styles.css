@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color: #F8FAFC;
 }
 :root{
     --radious: 5px;
@@ -9,11 +10,13 @@ body{
 }
         /* All body css */
 #content{
+    width: 80rem;
+    /* height: 1200px; */
     margin-left: 130px;
     margin-right: 130px;
     background-color: #F8FAFC;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: grid;
+   display: grid;
     /* grid-template-columns: auto;
     grid-template-rows: 130px 420px; */
 }
@@ -78,6 +81,7 @@ body{
      border: none;
      font-weight: bold;
      letter-spacing: 1px;
+     
 }
   
 .heading-div{
@@ -103,7 +107,7 @@ body{
 
 #menu-section{
     display: grid;
-    height: 500px;
+    height: 400px;
     grid-template-columns: 200px 338px 338px 338px;
     grid-template-rows: 200px;
     grid-gap: 15px;
@@ -164,11 +168,212 @@ body{
     font-size: 14px;
     
 } 
-@media only screen and (max-width: 1861px) {
-    .menu-bar4{
-        position: relative;
-        top: 300px;
-        right: 350px;
+.details-last{
+    position: relative;
+    top: 270px;
+    right: 350px;
+}
+.para-last{
+    position: relative;
+    top: 300px;
+    right: 705px;
+    color: gray;
+}
+
+.footer{
+    width: 100%;
+    height: 70px;
+    background-color: #070C0E;
+    margin-top: 260px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.blue{
+    color: #6d11f6;
+    font-style: italic;
+}
+
+          /* Media Quary for responsive website */
+
+@media only screen and (max-width: 1037px) {
+    .second-heading{
+        font-size: 60px;
+        
     }
-    
+}
+@media only screen and (max-width: 968px){
+    .second-heading{
+        font-size: 50px;
+        position: absolute;
+        top: 200px;
+
+    }
+}
+@media only screen and (max-width: 942px){
+    .second-heading{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 922px){
+      .sub-heading{
+        font-size: 20px;
+      }   
+}
+@media only screen and (max-width: 903px){
+    .second-heading{
+        font-size: 30px
+    }
+}
+@media only screen and (max-width: 1478px){
+    .footer{
+        width: 1500px;
+    }
+}
+
+
+  
+                                 /* About us page css */
+  
+.about-img{
+    margin-left: 40rem;
+    border-radius: var(--radious);
+}   
+.about-heading{
+    position: absolute;
+    top: 150px;
+    font-size: 45px;
+    letter-spacing: 2px;
+}          
+.about-para{
+    font-size: 18px;
+    position: relative;
+    top: -250px;
+}    
+.about-btn{
+    position: relative;
+    top: -250px;
+    padding: 10px;
+}       
+.about-secondh{
+    position: relative;
+    top: -150px;
+    text-align: center;
+}      
+#about-menu{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 415px 415px 415px;
+        grid-template-rows: 200px;
+        grid-gap: 15px;
+        position: relative;
+        bottom: 100px;
+        background-color: #F8FAFC;
+}
+
+.about-footer{
+    position: absolute;
+    top: 60rem;
+}
+                     
+                          /* Media queary of About us page */
+
+@media only screen and (max-width: 667px){
+    .about-heading{
+        position: absolute;
+        top: 100px;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .about-heading{
+        font-size: 40px;
+        position: absolute;
+        top: 150px;
+    }
+}
+@media only screen and (max-width: 453px) {
+    .about-heading{
+        font-size: 30px;
+        position: absolute;
+        top: 120px;
+    }
+}
+
+
+
+
+                                 /* Tags page css */
+
+
+
+#tags{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 100px 100px;
+    grid-gap: 20px;
+}
+.box{
+    background-color: #62708B;
+    color: white;
+    border-radius: var(--radious);
+    display: flex;
+    justify-content: center;
+}
+.tag-heading{
+    position: relative;
+    top: -10px;
+    letter-spacing: 1px;
+}
+.tag-subheading{
+    position: relative;
+    top: 25px;
+    right: 60px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+
+
+@media only screen and (min-width: 2459px){
+        #tags{
+            grid-template-columns: 200px 200px 200px;
+        }
+}
+@media only screen and (max-width: 359px){
+    .tag-btn{
+        position: absolute;
+        right: 200px;
+    }
+}
+@media only screen and (max-width: 350px){
+    #tags{
+        grid-template-columns: 400px;
+        margin: auto;
+    }
+    .tag-btn{
+        position: absolute;
+        left: 700px;
+    }
+}
+@media only screen and (max-width: 248px){
+    #tags{
+        margin-left: 120px;
+    }
+    .tag-btn{
+        position: absolute;
+        left: 500px;
+    }
+}
+
+
+
+
+
+
+                           /* Recipes page css */
+
+            
+.recipe-footer{
+    margin-top: 500px;
 }
